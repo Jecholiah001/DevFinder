@@ -26,7 +26,6 @@ function App() {
       setGithubUser(data)
 
     } catch (error) {
-        console.log(error)
         setError('No Results',error)
       }
 }

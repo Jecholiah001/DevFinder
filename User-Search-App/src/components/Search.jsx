@@ -25,7 +25,7 @@ const Search = ({getGithubUser, error}) => {
     <div className='bg-white flex justify-between items-center shadow rounded-lg dark:bg-blueBlack ml-5 mr-5 p-2 md:m-0' >
       <div className='flex gap-3 ml-2 '>
         <img src={searchIcon} alt='search icon' className=' w-[15px] h-[15px] md:w-[24px] md:h-[24px]'/>
-        <input  value={query} onChange={(e) => setQuery(e.target.value)} className='border-0 outline-none placeholder:text-gray-200 md:w-[390px] text-[9px] md:text-[16px] dark:bg-transparent dark:placeholder: text-white' type='text' placeholder='Search Github username...' />
+        <input  value={query} onChange={(e) => setQuery(e.target.value)} className='border-0 outline-none placeholder:text-gray-200 md:w-[390px] text-[9px] md:text-[16px] text-black dark:bg-transparent dark:text-white' type='text' placeholder='Search Github username...' />
       </div> 
       <div className='flex space-x'>
         <div className='items-center text-[8px] md:text-[16px] text-red-500 md:w-20 mt-2 mr-3'>{error}</div>

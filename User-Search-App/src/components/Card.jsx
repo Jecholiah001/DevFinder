@@ -22,12 +22,12 @@ const Card = ({githubUser}) => {
       {/* SECTION A */}
       <div className='flex  lg:gap-5  lg:w-full' >
         <span className=' ml-5 mt-7 mr-4 w-[30%] lg:w-[20%] lg:m-0'>
-          {githubUser?.avatar_url ? <img src={githubUser?.avatar_url} alt='bitmap' className='rounded-full'/> : <img src={Bitmap} alt='bitmap' className='rounded-full'/>}
+          {githubUser?.avatar_url ? <img src={githubUser?.avatar_url} alt='bitmap' className='rounded-full'/> : <img src={Bitmap} alt='bitmap' className='rounded-full'/> }
         
         </span>
         <div className='w-full flex flex-col lg:flex-row  lg:gap-2 justify-between items-start'>
           <div className='flex flex-col gap-1'>
-            <h1 className=' text-[15px] md:text-[24px] text-primaryBlack font-bold font-spaceMono mt-8 md:mt-12 md:mb-2 lg:m-0 lg:p-0  dark:text-white'> {githubUser?.login=== null ? 'The Octocat': githubUser?.login}</h1>
+            <h1 className=' text-[15px] md:text-[24px] text-primaryBlack font-bold font-spaceMono mt-8 md:mt-12 md:mb-2 lg:m-0 lg:p-0  dark:text-white'> {githubUser?.login=== null ? 'The Octocat': githubUser?.login }</h1>
             <h4 className=' text-[10px] md:text-[14px] text-primaryBlue font-spaceMono mt-2 m-0 p-0'>@{githubUser?.login}</h4>
             </div>
             <h4 className=' text-[10px]  md:text-[13px] text-gray-200 font-spaceMono lg:mt-2 dark:text-white'>
@@ -83,6 +83,7 @@ const Card = ({githubUser}) => {
     </div> 
   )
 }
+
 
 export default Card
 
