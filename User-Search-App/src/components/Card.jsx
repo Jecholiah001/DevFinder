@@ -17,7 +17,7 @@ const Card = ({githubUser}) => {
   const {theme} = useContext(ThemeContext)
 
   return (
-    <div className='flex flex-col mb-40 md:mb-52 lg:mb-96 xl:mb-9 ml-5 mr-5 pb-10 md:pb-20 lg:[45%] md:[60%] md:p-6 md:m-0 md:w-full bg-white rounded-lg shadow dark:bg-blueBlack'>
+    <div className='flex flex-col mb-[300px] md:mb-52 lg:mb-96 xl:mb-[500px] ml-5 mr-5 pb-10 md:pb-20 lg:[45%] md:[60%] md:p-6 md:m-0 md:w-full bg-white rounded-lg shadow dark:bg-blueBlack'>
 
       {/* SECTION A */}
       <div className='flex  lg:gap-5  lg:w-full' >
@@ -27,8 +27,8 @@ const Card = ({githubUser}) => {
         </span>
         <div className='w-full flex flex-col lg:flex-row  lg:gap-2 justify-between items-start'>
           <div className='flex flex-col gap-1'>
-            <h1 className=' text-[15px] md:text-[24px] text-primaryBlack font-bold font-spaceMono mt-8 lg:m-0 lg:p-0  dark:text-white'> {githubUser?.login=== null ? 'The Octocat': githubUser?.login}</h1>
-            <h4 className=' text-[10px] md:text-[14px] text-primaryBlue font-spaceMono m-0 p-0'>@{githubUser?.login}</h4>
+            <h1 className=' text-[15px] md:text-[24px] text-primaryBlack font-bold font-spaceMono mt-8 md:mt-12 md:mb-2 lg:m-0 lg:p-0  dark:text-white'> {githubUser?.login=== null ? 'The Octocat': githubUser?.login}</h1>
+            <h4 className=' text-[10px] md:text-[14px] text-primaryBlue font-spaceMono mt-2 m-0 p-0'>@{githubUser?.login}</h4>
             </div>
             <h4 className=' text-[10px]  md:text-[13px] text-gray-200 font-spaceMono lg:mt-2 dark:text-white'>
             Joined {moment(githubUser?.created_at).format('D MMM YYYY')}
