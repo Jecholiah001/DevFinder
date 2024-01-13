@@ -22,7 +22,6 @@ function App() {
       })
 
       const data = await response.data
-      console.log(data)
       setLoading(false)
       setGithubUser(data)
 
@@ -35,8 +34,8 @@ function App() {
 
   return (
   
-    <div className='w-100 h-screen bg-gray-light dark:bg-tetiaryBlack ' >
-      <div className='w:[90%] md:w-[60%] lg:w-[45%] m-auto pt-[10rem] flex flex-col gap-5 overflow-hidden'>
+    <div className='w-screen h-200 bg-gray-light dark:bg-tetiaryBlack ' >
+      <div className='w:[10%] md:w-[80%] lg:w-[65%] m-auto pt-16 md:pt-[10rem] flex flex-col gap-5 overflow-hidden'>
         <Header/>
         <Search getGithubUser ={getGithubUser} error={error}/>
         <Card githubUser= {githubUser}/>
